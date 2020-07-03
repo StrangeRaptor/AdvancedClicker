@@ -1,0 +1,131 @@
+@font-face {
+  font-family: Geo-Regular;
+  src: url(assets/Geo-Regular.ttf);
+}
+html {
+  font-family: Geo-Regular;
+}
+#Upgrades  {
+  list-style: none;
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+}
+#Upgrades button {
+  width: 50px;
+  height: 50px;
+  background: url("https://s3.amazonaws.com/pix.iemoji.com/images/emoji/apple/ios-12/256/money-with-wings.png") no-repeat local center;
+  background-size: contain;
+  border: black 2px solid;
+  margin: 30px;
+}
+#Upgrades button .hovertext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  top: 50px;
+  right: 40px;
+  position: relative;
+  z-index: 1;
+}
+#Upgrades button:hover .hovertext {
+  visibility: visible;
+}
+.shop {
+  image-rendering: pixelated;
+  background:url(assets/background.png);
+  background-size: 2vw;
+  border: 1vw solid transparent;
+  border-image: url(assets/border.png) 8 repeat;
+  border-image-outset: .5vw;
+  margin-left: 1vw;
+  width: 200px;
+  display: inline-block;
+  animation: fadein 1.5s;
+    -moz-animation: fadein 1.5s;
+    /* Firefox */
+    -webkit-animation: fadein 1.5s;
+    /* Safari and Chrome */
+    -o-animation: fadein 1.5s;
+    /* Opera */
+}
+.buttons {
+  font-size: 1vw;
+  font-family: Geo-Regular;
+  height: 40px;
+  width: 100%;
+  border: none;
+  font-weight: bold;
+  background: #bec;
+  cursor: pointer;
+}
+.buttons:disabled {
+  background: #525965;
+  cursor: auto;
+  color: black;
+}
+.duration {
+  background: black;
+  height: 50px;
+  width: 100%;
+}
+.progbargen-green, .progbargen-blue {
+  width: 0%;
+  height: 100%;
+}
+.progbargen-green {
+  background: #0d8;
+}
+.progbargen-blue {
+  background: #67dbff;
+}
+.countdown {
+  font-size: 1vw;
+  text-align: center;
+  color: black;
+  font-family: Geo-Regular;
+  width: 100%;
+  background-color: white;
+  padding: .5vw 0 .5vw 0;
+}
+button:focus {
+  outline: none;
+}
+@-webkit-keyframes position {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+
+@keyframes position {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein {
+    /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}

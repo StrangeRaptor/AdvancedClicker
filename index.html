@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Advanced Clicker</title>
+    <link rel="stylesheet" type="text/css" href="master.css">
+  </head>
+  <body>
+    <h1 id="Counter"></h1>
+    <button class="buttons" onclick="player = JSON.parse(JSON.stringify(defaultplayer));save();">Reset Save</button>
+
+    <div id="Upgrades">
+      <button onclick="player.shops.shop1.active = true;">
+        <div class="hovertext">Ha look ma, no hands!</div>
+      </button>
+
+      <button>
+        <div class="hovertext">Ha look ma, no hands!</div>
+      </button>
+    </div>
+
+    <script src="player.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
